@@ -1,12 +1,12 @@
 package Assignment1;
 
+import java.util.List;
+
 public abstract class Customer {
     private String id;
     private String fullName;
     private InsuranceCard card;
     private List<Claim> claimList;
-
-    //private ArrayList<Claim>;
 
     public Customer() {
         this.id = null;
