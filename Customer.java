@@ -3,20 +3,22 @@ package Assignment1;
 public abstract class Customer {
     private String id;
     private String fullName;
-    private String cardNum;
+    private InsuranceCard card;
+    private List<Claim> claimList;
 
     //private ArrayList<Claim>;
 
-    public Customer()
-    {
+    public Customer() {
         this.id = null;
         this.fullName = null;
-        this.cardNum = null;
+        this.card = null;
+        this.claimList = null;
     }
-    Customer(String id, String fullName, String cardNum)
-    {
+    
+    Customer(String id, String fullName, InsuranceCard card, List<Claim> claimList) {
         this.id = id;
         this.fullName = fullName;
-        this.cardNum = cardNum;
+        this.card = card;
+        this.claimList = claimList;
     }
 }
